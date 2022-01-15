@@ -9,7 +9,7 @@ import os
 import cv2
 from skimage.measure import compare_psnr, compare_ssim
 
-txt_file = open(r'.\inference.txt,'a')
+txt_file = open(r'/content/pytorch-CycleGAN-and-pix2pix/inference.txt','a')
 
 def calc_measures(hr_path, calc_psnr=True, calc_ssim=True):
 	HR_files = glob.glob(hr_path + '/*')
