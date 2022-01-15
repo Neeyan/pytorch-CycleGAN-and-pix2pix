@@ -13,8 +13,8 @@ txt_file = open(r'/content/inference','a')
 
 def calc_measures(hr_path, calc_psnr=True, calc_ssim=True):
 	HR_files = glob.glob(hr_path + '/*')
-        mean_psnr = 0
-        mean_ssim = 0
+	mean_psnr = 0
+	mean_ssim = 0
 
     for file in HR_files:
         hr_img = cv2.imread(file)
